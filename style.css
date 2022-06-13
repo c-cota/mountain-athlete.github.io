@@ -1,0 +1,265 @@
+/*universal styling */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: #607DA8;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,li{
+    color:white;
+    text-align: center;
+}
+
+
+/*nav bar styling*/
+.nav{
+    height: 6rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #445978;
+
+}
+
+.logo{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+}
+
+.nav-links ul{
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.nav-links li{
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.nav-links a{
+    text-decoration:none;
+}
+
+.nav-links a:hover{
+    font-size: 1.75rem;
+    transition: font-size .1s .1s ease;
+}
+
+/*hero styling*/
+
+.hero{
+    width:100%;
+    background-image: url(./resources/images/tom.jpg);
+    background-attachment: fixed;
+    background-repeat:no-repeat
+    background-position: center;
+    background-size:cover;
+    padding:12rem 0; 
+}
+    
+
+.hero h1,
+.hero h3{
+    text-shadow:3px 3px 3px #607da8;
+}
+
+.hero h1{
+    font-size: 4rem;
+}
+
+.hero h3{
+    font-size: 2rem;
+}
+
+#hero-h3-mobile{
+    display: none;
+}
+
+/*gym gallery styling*/
+.gym-gallery{
+    width: 100%;
+    margin-top:2rem;
+    display: inline-flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+
+.gym-gallery img{
+    align-self:center;
+    width:30rem;
+    margin: 1.5rem;
+}
+
+.gallery-caption{
+    font-size:2rem;
+    text-shadow:2px 2px 2px #607da8;
+    background-color: #8f7598;
+    padding:3rem;
+}
+
+/*bio styling*/
+.paul-gallery{
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-top:1rem;
+}
+
+.paul-gallery img{
+    align-self:center;
+    width:30rem;
+    margin: 2rem;
+    
+}
+
+.coach-paul-container{
+    padding:2rem;
+    background-color: #8f7598;
+    width:80%;
+    margin:0 auto;
+    margin-top:1rem;
+}
+.coach-paul{
+    font-size:2.5rem;
+    text-shadow:4px 4px 1px #445978;
+}
+
+.coach-bio{
+    font-size: 1.5rem;
+}
+/**contact styling**/
+
+.contact{
+    background-color: #445978;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contact h3{
+    font-size: 2.5rem;
+}
+
+.contact p{
+    font-size: 1rem;
+}
+
+/*mobile styling*/
+
+@media only screen and (max-width:760px) {
+   
+    /*mobile nav styling*/
+    .nav{
+        height: 8rem;
+    }
+    
+    .logo{
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+       
+    }
+
+    .nav-links{
+        margin: auto;
+    }
+
+    .nav-links ul{
+        margin:0
+    }
+
+
+    .nav-links li{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /*mobile hero styling*/
+
+
+    .hero{
+        
+        padding:2.75rem 0;
+        background-position:80%;
+          }
+
+    .hero h1{
+        font-size:1.5rem;
+    }
+
+    #hero-h3-desktop{
+        display: none;
+    }
+
+    #hero-h3-mobile{
+        display: block;
+        padding-top: 2rem;
+    }
+
+    .gym-gallery{
+        margin-top:.25rem;
+    }
+
+    .gym-gallery img{
+        width:90%;
+        margin: 1rem;
+    }
+
+    .gallery-caption{
+        font-size: 1.5rem;  
+        padding: 1rem;
+    }
+
+    /* mobile bio styling*/
+
+    .paul-gallery{
+        margin-top: 1rem;
+    }
+
+    .paul-gallery img{
+        width: 90%;
+        margin: 1rem;
+    }
+
+    #coach-paul-desktop{
+        display: none;
+    }
+
+    #coach-paul-mobile{
+        display: block;
+    }
+
+    .coach-paul-container{
+        margin:1rem 0;
+        width: 90%;
+    }
+
+    .coach-paul{
+        font-size: 1.5rem;
+    }
+
+    .coach-bio{
+        font-size: 1.25rem;
+    }
+}
